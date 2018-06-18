@@ -1,0 +1,782 @@
+{
+    "1": {
+        "Number": "1",
+        "Category": "Get Moving",
+        "Activity": "Create an obstacle course to complete on your favorite jungle gym or park structure",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "2": {
+        "Number": "2",
+        "Category": "Get Moving",
+        "Activity": "Go kayaking on a lake or pond",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "3": {
+        "Number": "3",
+        "Category": "Get Moving",
+        "Activity": "Go for a hike",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "4": {
+        "Number": "4",
+        "Category": "Get Moving",
+        "Activity": "Hike a trail that\u2019s new to you",
+        "Details": "Which trail:",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "5": {
+        "Number": "5",
+        "Category": "Get Moving",
+        "Activity": "Hike to a summit",
+        "Details": "Location:",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "6": {
+        "Number": "6",
+        "Category": "Get Moving",
+        "Activity": "Hike to a waterfall",
+        "Details": "Location:",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "7": {
+        "Number": "7",
+        "Category": "Get Moving",
+        "Activity": "Try mountain biking",
+        "Details": "Which trail?",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "8": {
+        "Number": "8",
+        "Category": "Get Moving",
+        "Activity": "Climb a boulder and take a picture ",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "9": {
+        "Number": "9",
+        "Category": "Get Moving",
+        "Activity": "Jump off a dock into a lake",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "10": {
+        "Number": "10",
+        "Category": "Get Moving",
+        "Activity": "Go trail running",
+        "Details": "Which trail?",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "11": {
+        "Number": "11",
+        "Category": "Get Moving",
+        "Activity": "Climb a tree",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "12": {
+        "Number": "12",
+        "Category": "Get Moving",
+        "Activity": "Go river tubing",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "13": {
+        "Number": "13",
+        "Category": "Get Moving",
+        "Activity": "Play disc golf",
+        "Details": "Which one?",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "14": {
+        "Number": "14",
+        "Category": "Get Moving",
+        "Activity": "Go skateboarding",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "15": {
+        "Number": "15",
+        "Category": "Get Moving",
+        "Activity": "Play a tag game like freeze tag or flashlight tag",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "16": {
+        "Number": "16",
+        "Category": "Get Moving",
+        "Activity": "Try stand-up paddle-boarding",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "17": {
+        "Number": "17",
+        "Category": "Investigate",
+        "Activity": "Identify 2 different kinds of dragonflies",
+        "Details": "What kind?",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "18": {
+        "Number": "18",
+        "Category": "Investigate",
+        "Activity": "Hang out a sheet to attract moths at dusk and shine a light on it. How many are there?",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "19": {
+        "Number": "19",
+        "Category": "Investigate",
+        "Activity": "Section off a square foot of forest with string. How many plant & animal species do you find?",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "20": {
+        "Number": "20",
+        "Category": "Investigate",
+        "Activity": "Create a fact sheet & illustration about your favorite Vermont animal and send it to us",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "21": {
+        "Number": "21",
+        "Category": "Investigate",
+        "Activity": "ID 5 different kinds of native plants",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "22": {
+        "Number": "22",
+        "Category": "Investigate",
+        "Activity": "ID 3 different habitat types by your house",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "23": {
+        "Number": "23",
+        "Category": "Investigate",
+        "Activity": "Identify the full common species name of at least 5 trees around your home (for example: Weeping Birch Tree). Make a journal that includes pressed leaf examples and details about the trees (15 pts)",
+        "Details": "",
+        "Points": "15",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "24": {
+        "Number": "24",
+        "Category": "Investigate",
+        "Activity": "Bonus: Send us the journal",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "25": {
+        "Number": "25",
+        "Category": "Investigate",
+        "Activity": "Catch and ID least 2 types of fish",
+        "Details": "Which ones?",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "26": {
+        "Number": "26",
+        "Category": "Investigate",
+        "Activity": "Get up at dawn and go on a bird walk. Attach a list of the birds you saw and heard.",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "27": {
+        "Number": "27",
+        "Category": "Investigate",
+        "Activity": "Sign up for iNaturalist and use it to find or ID a species new to you",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "28": {
+        "Number": "28",
+        "Category": "Serve",
+        "Activity": "Pick up litter by the road or in your town",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "29": {
+        "Number": "29",
+        "Category": "Serve",
+        "Activity": "Carpool on your next trip to a park",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "30": {
+        "Number": "30",
+        "Category": "Serve",
+        "Activity": "Help a neighbor or senior with gardening, yard work or other some other chore",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "31": {
+        "Number": "31",
+        "Category": "Serve",
+        "Activity": "Draw a detailed map of your town or city, including your favorite landmarks",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "32": {
+        "Number": "32",
+        "Category": "Serve",
+        "Activity": "Write a thank you note to someone in your community",
+        "Details": "Who?",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "33": {
+        "Number": "33",
+        "Category": "Serve",
+        "Activity": "Plant a native tree or plant",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "34": {
+        "Number": "34",
+        "Category": "Serve",
+        "Activity": "Take over a family member\u2019s chore for 1 week",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "35": {
+        "Number": "35",
+        "Category": "Serve",
+        "Activity": "Donate to your local food bank",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "36": {
+        "Number": "36",
+        "Category": "Serve",
+        "Activity": "Do 2 hours of volunteering",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "37": {
+        "Number": "37",
+        "Category": "Outdoor Skills",
+        "Activity": "Take a swimming lesson",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "38": {
+        "Number": "38",
+        "Category": "Outdoor Skills",
+        "Activity": "Build a natural shelter",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "39": {
+        "Number": "39",
+        "Category": "Outdoor Skills",
+        "Activity": "Build a campfire",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "40": {
+        "Number": "40",
+        "Category": "Outdoor Skills",
+        "Activity": "Learn 3 new canoe strokes",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "41": {
+        "Number": "41",
+        "Category": "Outdoor Skills",
+        "Activity": "Learn to set up a tent",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "42": {
+        "Number": "42",
+        "Category": "Outdoor Skills",
+        "Activity": "Practice a new navigational skill with map & compass",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "43": {
+        "Number": "43",
+        "Category": "Outdoor Skills",
+        "Activity": "Learn a new method for collecting water/ making it safe to drink",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "44": {
+        "Number": "44",
+        "Category": "Outdoor Skills",
+        "Activity": "Learn to ID at least 2 noxious plants",
+        "Details": "Which plants?",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "45": {
+        "Number": "45",
+        "Category": "Outdoor Skills",
+        "Activity": "Learn to tie 2 new knots, such as a bowline",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "46": {
+        "Number": "46",
+        "Category": "Outdoor Skills",
+        "Activity": "Put together outdoor first aid kit",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "47": {
+        "Number": "47",
+        "Category": "Outdoor Skills",
+        "Activity": "Cook a meal over a fire",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "48": {
+        "Number": "48",
+        "Category": "Outdoor Skills",
+        "Activity": "Whittle a cooking or hiking stick",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "49": {
+        "Number": "49",
+        "Category": "Outdoor Skills",
+        "Activity": "Go on an overnight backpacking trip",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "50": {
+        "Number": "50",
+        "Category": "Create",
+        "Activity": "Build a fairy house",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "51": {
+        "Number": "51",
+        "Category": "Create",
+        "Activity": "Try making wind chimes using natural materials. What sounds do they make?",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "52": {
+        "Number": "52",
+        "Category": "Create",
+        "Activity": "Keep a nature journal recording your observations. For more ideas and advice about keeping a nature journal, read this blog post ",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "53": {
+        "Number": "53",
+        "Category": "Create",
+        "Activity": "Build a boat out of natural materials and see if it floats",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "54": {
+        "Number": "54",
+        "Category": "Create",
+        "Activity": "Create your own state park poem or song and send it to us!",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "55": {
+        "Number": "55",
+        "Category": "Create",
+        "Activity": "Put together a picnic lunch using local ingredients. Sit outside and enjoy!",
+        "Details": "What did you make?",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "56": {
+        "Number": "56",
+        "Category": "Create",
+        "Activity": "Create a bracelet incorporating natural materials",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "57": {
+        "Number": "57",
+        "Category": "Create",
+        "Activity": "Make a weaving using natural materials like yarn, paper, fabric or grasses",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "58": {
+        "Number": "58",
+        "Category": "Create",
+        "Activity": "Make your own fire starters with pine cones or other natural materials",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "59": {
+        "Number": "59",
+        "Category": "Create",
+        "Activity": "Learn to tie 3 new knots such as bowline, fisherman\u2019s knot, etc.",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "60": {
+        "Number": "60",
+        "Category": "Just For Fun",
+        "Activity": "Make your own slip & slide",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "61": {
+        "Number": "61",
+        "Category": "Just For Fun",
+        "Activity": "DIY bowling- construct your own bowling course outside and play a game",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "62": {
+        "Number": "62",
+        "Category": "Just For Fun",
+        "Activity": "Unplug for a day & make it \u201cscreen-free\u201d",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "63": {
+        "Number": "63",
+        "Category": "Just For Fun",
+        "Activity": "Make a sand sculpture at the beach",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "64": {
+        "Number": "64",
+        "Category": "Just For Fun",
+        "Activity": "Create your own outdoor/ nature scavenger hunt. Attach your score sheet",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "65": {
+        "Number": "65",
+        "Category": "Just For Fun",
+        "Activity": "Tell stories around the campfire. Write down your favorite and send it to us!",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "66": {
+        "Number": "66",
+        "Category": "Just For Fun",
+        "Activity": "Go on a rainy-day hike",
+        "Details": "",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "67": {
+        "Number": "67",
+        "Category": "Just For Fun",
+        "Activity": "Practice skipping stones",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "68": {
+        "Number": "68",
+        "Category": "Just For Fun",
+        "Activity": "Make a picture with rocks",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "69": {
+        "Number": "69",
+        "Category": "Just For Fun",
+        "Activity": "Everyone loves s\u2019mores- put your own spin on the classic by creating your own version",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "70": {
+        "Number": "70",
+        "Category": "Know Your Parks",
+        "Activity": "Camp in a tent or lean-to at a VT State Park",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "71": {
+        "Number": "71",
+        "Category": "Know Your Parks",
+        "Activity": "Hike a trail in a VT State Park",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "72": {
+        "Number": "72",
+        "Category": "Know Your Parks",
+        "Activity": "Visit a park that is new to you",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "73": {
+        "Number": "73",
+        "Category": "Know Your Parks",
+        "Activity": "Write a thank you note to a park ranger",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "74": {
+        "Number": "74",
+        "Category": "Know Your Parks",
+        "Activity": "Check out a horseshoes kit from the park office and play a game, or use your own",
+        "Details": "Park:",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "75": {
+        "Number": "75",
+        "Category": "Know Your Parks",
+        "Activity": "Check out a REEL FUN kit at Vermont State Park. Full list here",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "76": {
+        "Number": "76",
+        "Category": "Know Your Parks",
+        "Activity": "Attend a state park interpretive program",
+        "Details": "Park:",
+        "Points": "10",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "77": {
+        "Number": "77",
+        "Category": "Know Your Parks",
+        "Activity": "Become a Junior Ranger",
+        "Details": "",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    },
+    "78": {
+        "Number": "78",
+        "Category": "Know Your Parks",
+        "Activity": "Have a picnic breakfast in a state park",
+        "Details": "Park:",
+        "Points": "5",
+        "is_complete": false,
+        "is_target": false,
+        "details_input": ""
+    }
+}

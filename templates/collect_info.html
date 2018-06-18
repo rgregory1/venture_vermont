@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/confirm_info' enctype="multipart/form-data">
+	<section class="form-header">
+		<!-- {% if message is defined %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <p>Please select the Major Power you would like to add to your character:</p> -->
+		<h2>Upload Photos and Info</h2>
+	</section>
+	<section class="form-body">
+		<section class="picker-category">
+			{% if results is defined %}
+		    <p class="{{ alert_box_class }}">{{ results }}</p>
+		    {% endif %}
+
+			<h3>{{ current_activity['Activity']}}</h3>
+
+			{% if current_activity['Details'] %}
+				{% if current_activity['details_input'] == '' %}
+					<div class="form-div">
+						<p>{{ current_activity['Details']}}</p>
+						<input type="text" name="details_input">
+					</div>
+				{% endif %}
+			{% endif %}
+			<div class="form-div">
+			<label for="file" class="input-label"> <span id="label_span">Select Files to Upload</span> </label>
+				<input id="file" type=file name=photo>
+				<p>If this photo needs addional info, add it here.  (limit 20 chars)</p>
+				<input type="text" maxlength="20" name="photo_description">
+			</div>
+			<input type="hidden" name="activity_selected" value="{{ current_activity['Activity'] }}">
+			<p>You may upload another photo after this one is uploaded</p>
+		</section>
+
+
+
+		<!-- {% for activity in data %}
+    <div class="picker {{ loop.cycle('odd', 'even') }}">
+      <label class="container"><span class="big_deal">{{ data[activity]['Category'] }}</span> - {{ data[activity]['Activity']}}
+        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    {% endfor %} -->
+
+		<p class="submitp"><input class="button" value='Make Choice' type='SUBMIT'></p>
+	</section>
+</form>
+
+
+
+{% endblock %} {% block script %}
+<script>
+	$(":radio").click(function() {
+		$(this).closest("div").addClass("active").
+		siblings("div.active").removeClass("active");
+	});
+</script>
+{% endblock %}

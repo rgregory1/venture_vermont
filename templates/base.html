@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>{{ the_title }}</title>
+	<link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body>
+	<div class="page-container">
+	<nav class="header">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/logout">Logout</a></li>
+		</ul>
+		{% if data is defined %}
+		<span class="score">{{ data['score']['total_score'] }} &#47; 250</span>
+		{% endif %}
+	</nav>
+	<div class="content">
+		<div class="wrapper">
+			{% block body %} {% endblock %}
+		</div><!--end wrapper-->
+	</div><!--end content-->
+	<footer>
+		<p></p>
+	</footer>
+
+	{% block script %} {% endblock %}
+</div><!--- end page-container-->
+</body>
+
+</html>
