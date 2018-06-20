@@ -5,13 +5,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>{{ the_title }}</title>
 	<link rel="stylesheet" href="static/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 	<div class="page-container">
 	<nav class="header">
 		<ul>
-			<li><a href="/">Home</a></li>
+			<li><a href="/">Activity List</a></li>
+			<li><a href="/completed">Completed</a></li>
+			<li><a href="/priority_list">Priority List</a></li>
 			<li><a href="/logout">Logout</a></li>
 		</ul>
 		{% if data is defined %}

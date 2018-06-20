@@ -8,13 +8,14 @@
     <p>{{ message }}</p>
     {% endif %}
     <p>Please select the Major Power you would like to add to your character:</p> -->
-		<h2>Choose an Activity</h2>
+		<h2>Choose a Priority Activity</h2>
+
 	</section>
 	<section class="form-body">
 		<section class="picker-category get-moving-section">
 			<h3>Get Moving <span>{{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity'] }}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -27,7 +28,7 @@
 		<section class="picker-category investigate-section">
 			<h3>Investigate <span>{{ data['score']['categories']['Investigate']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Investigate' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Investigate' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -40,7 +41,7 @@
 		<section class="picker-category serve-section">
 			<h3>Serve <span>{{ data['score']['categories']['Serve']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Serve' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Serve' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -53,7 +54,7 @@
 		<section class="picker-category outdoor-skills-section">
 			<h3>Outdoor Skills <span>{{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Outdoor Skills' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Outdoor Skills' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -66,7 +67,7 @@
 		<section class="picker-category create-section">
 			<h3>Create <span>{{ data['score']['categories']['Create']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Create' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Create' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -79,7 +80,7 @@
 		<section class="picker-category just-for-fun-section">
 			<h3>Just For Fun <span>{{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Just For Fun' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Just For Fun' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -92,7 +93,7 @@
 		<section class="picker-category know-your-parks-section">
 			<h3>Know Your Parks <span>{{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
-				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == False %}
+				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 				<div class="picker {{ loop.cycle('odd', 'even') }}">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
@@ -108,7 +109,7 @@
 	</section>
 </form>
 
-
+<p><a href='/priority_picker'>Add an activity</a></p>
 
 {% endblock %} {% block script %}
 <script>

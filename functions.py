@@ -53,3 +53,10 @@ def push_activity_dict(current_activity, data, family, basedir):
 	target_directory = basedir / 'static' / 'long_term_storage' / family / family_file
 	with open(target_directory, 'w') as f:
 		json.dump(data, f, indent=4)
+
+def push_dict(data, family, basedir):
+	suffix = '.json'
+	family_file = family + suffix
+	target_directory = basedir / 'static' / 'long_term_storage' / family / family_file
+	with open(target_directory, 'w') as f:
+		json.dump(data, f, indent=4)
