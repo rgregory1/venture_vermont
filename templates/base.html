@@ -3,6 +3,7 @@
 
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>{{ the_title }}</title>
 	<link rel="stylesheet" href="static/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,16 +11,19 @@
 
 <body>
 	<div class="page-container">
-	<nav class="header">
-		<ul>
+	<nav class="topnav">
+		<ul id="hider">
 			<li><a href="/">Activity List</a></li>
 			<li><a href="/completed">Completed</a></li>
 			<li><a href="/priority_list">Priority List</a></li>
 			<li><a href="/logout">Logout</a></li>
 		</ul>
-		{% if data is defined %}
-		<span class="score">{{ data['score']['total_score'] }} &#47; 250</span>
-		{% endif %}
+		<span class="score">
+			{% if data is defined %}
+			{{ data['score']['total_score'] }} &#47; 250
+			{% endif %}
+			<i class="fa fa-bars"></i>
+		</span>
 	</nav>
 	<div class="content">
 		<div class="wrapper">
@@ -29,7 +33,11 @@
 	<footer>
 		<p></p>
 	</footer>
-
+	<script>
+	$(".score").click(function(){
+    $("#hider").toggle(1000);
+	});
+	</script>
 	{% block script %} {% endblock %}
 </div><!--- end page-container-->
 </body>
