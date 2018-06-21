@@ -11,19 +11,22 @@
 
 <body>
 	<div class="page-container">
-	<nav class="topnav">
-		<ul id="hider">
-			<li><a href="/">Activity List</a></li>
-			<li><a href="/completed">Completed</a></li>
-			<li><a href="/priority_list">Priority List</a></li>
-			<li><a href="/logout">Logout</a></li>
-		</ul>
+	<nav>
 		<span class="score">
 			{% if data is defined %}
 			{{ data['score']['total_score'] }} &#47; 250
 			{% endif %}
 			<i class="fa fa-bars"></i>
 		</span>
+		<section class="topnav">
+		<ul id="hider">
+			<li><a href="/">Activity List</a></li>
+			<li><a href="/completed">Completed</a></li>
+			<li><a href="/priority_list">Priority List</a></li>
+			<li><a href="/logout">Logout</a></li>
+		</ul>
+		</section>
+
 	</nav>
 	<div class="content">
 		<div class="wrapper">

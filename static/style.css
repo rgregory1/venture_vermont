@@ -6,12 +6,15 @@ body {
 nav {
 
 	background-color: #333;
+	min-height: 50px;
+	color: #fff;
+	padding-top: 35px;
 }
 
 .topnav {
 	background-color: #333;
 	position: relative
-	min-height: 50px;
+
 
 }
 
@@ -25,6 +28,7 @@ nav {
 .topnav ul li {
 	position: relative;
 	background-color: red;
+
 }
 
 .topnav ul li a {
@@ -33,14 +37,16 @@ nav {
 	background-color: blue;
 	padding: 15px;
 	display: block;
+
 }
 
 
-.topnav span {
+nav span {
 	position: absolute;
 	top: 0;
 	right: 0;
 	padding: 15px 15px 0 0;
+	z-index: 1000;
 }
 
 
