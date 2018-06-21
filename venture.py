@@ -18,9 +18,9 @@ ALLOWED_EXTENSIONS = set(['jpg', 'jpeg', 'heic'])
 app = Flask(__name__)
 app.secret_key = 'my_secret_key'
 
-basedir = pathlib.Path.cwd()
+# basedir = pathlib.Path.cwd()
 # alt base directory to try
-# basedir = pathlib.Path(__file__).parent.resolve()
+basedir = pathlib.Path(__file__).parent.resolve()
 
 
 photos = UploadSet('photos', IMAGES)
