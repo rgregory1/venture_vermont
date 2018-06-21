@@ -54,10 +54,21 @@
 
 
 {% endblock %} {% block script %}
-<!-- <script>
-	$(":radio").click(function() {
-		$(this).closest("div").addClass("active").
-		siblings("div.active").removeClass("active");
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+
 	});
-</script> -->
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
 {% endblock %}

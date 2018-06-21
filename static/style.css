@@ -1,12 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
 
 	background-color: #333;
-	min-height: 50px;
+	min-height: 20px;
 	color: #fff;
 	padding-top: 35px;
 }
@@ -14,8 +15,7 @@ nav {
 .topnav {
 	background-color: #333;
 	position: relative
-
-
+	font-weight: bold;
 }
 
 .topnav ul {
@@ -27,17 +27,17 @@ nav {
 
 .topnav ul li {
 	position: relative;
-	background-color: red;
+	/* background-color: red; */
 
 }
 
 .topnav ul li a {
 	color: #fff;
 	text-decoration: none;
-	background-color: blue;
+	/* background-color: blue; */
 	padding: 15px;
 	display: block;
-
+	font-size: 125%
 }
 
 
@@ -47,11 +47,113 @@ nav span {
 	right: 0;
 	padding: 15px 15px 0 0;
 	z-index: 1000;
+	font-size: 150%;
 }
 
+nav span i {
+	margin: 0 20px;
+}
 
 
 
 .form-div {
     margin: 20px;
+}
+
+/*----------------------------------- picker categories ---------------------------*/
+
+.picker-category {
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.picker-category h3 {
+	font-size: 150%;
+	margin: 0 10px 10px 10px;
+}
+
+.get-moving-section, .serve-section, .create-section, .know-your-parks-section {
+	background-color: #98d598;
+}
+
+.picker {
+	border-radius: 5px;
+
+}
+/* ---------------------------------- radio buttons --------------------------------*/
+
+/* Customize the label (the container) */
+.container {
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ /* margin-bottom: 12px; */
+ cursor: pointer;
+ font-size: 110%;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+ position: absolute;
+ opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #eee;
+ border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+ background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ top: 9px;
+ left: 9px;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background: white;
+}
+
+.picker {
+	padding: 10px;
+}
+
+.odd {
+	background-color: #999;
+}
+
+.even {
+	background-color: #fff;
 }

@@ -37,4 +37,22 @@
 
 {% endblock %} {% block script %}
 
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+		
+	});
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
+
 {% endblock %}

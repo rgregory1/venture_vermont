@@ -16,7 +16,7 @@
 			<h3>Get Moving <span>{{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity'] }}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -36,7 +36,7 @@
 			<h3>Investigate <span>{{ data['score']['categories']['Investigate']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Investigate' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -56,7 +56,7 @@
 			<h3>Serve <span>{{ data['score']['categories']['Serve']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Serve' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -76,7 +76,7 @@
 			<h3>Outdoor Skills <span>{{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Outdoor Skills' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -96,7 +96,7 @@
 			<h3>Create <span>{{ data['score']['categories']['Create']['completed'] }} &#47;2</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Create' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -116,7 +116,7 @@
 			<h3>Just For Fun <span>{{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Just For Fun' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -136,7 +136,7 @@
 			<h3>Know Your Parks <span>{{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == True %}
-				<div class="picker {{ loop.cycle('odd', 'even') }}">
+				<div class="picker">
 					<label class="container">{{ data[activity]['Activity']}}
 			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
 			        <span class="checkmark"></span>
@@ -161,10 +161,21 @@
 
 
 {% endblock %} {% block script %}
-<!-- <script>
-	$(":radio").click(function() {
-		$(this).closest("div").addClass("active").
-		siblings("div.active").removeClass("active");
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+		oddSpotter();
 	});
-</script> -->
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
 {% endblock %}
