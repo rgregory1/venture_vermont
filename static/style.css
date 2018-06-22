@@ -4,16 +4,15 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ------------------------------------ nav styles ---------------------------*/
 nav {
-
-	background-color: #333;
-	min-height: 20px;
+	background-color: #1a3300;
+	min-height: 55px;
 	color: #fff;
-	padding-top: 35px;
 }
 
 .topnav {
-	background-color: #333;
+	background-color: #1a3300;
 	position: relative
 	font-weight: bold;
 }
@@ -40,20 +39,29 @@ nav {
 	font-size: 125%
 }
 
-
-nav span {
+span.score {
 	position: absolute;
 	top: 0;
 	right: 0;
 	padding: 15px 15px 0 0;
 	z-index: 1000;
 	font-size: 150%;
+	color: #fff;
 }
 
-nav span i {
+span.score i {
 	margin: 0 20px;
 }
 
+.form-header, .removal-notice {
+	padding: 20px;
+	background-color: #3d6d0d;
+	color: #fff;
+}
+
+.form-header p {
+	line-height: 150%;
+}
 
 
 .form-div {
@@ -63,23 +71,47 @@ nav span i {
 /*----------------------------------- picker categories ---------------------------*/
 
 .picker-category {
-	margin: 20px;
+	/* margin: 20px; */
+	/* margin: 0 -10px; */
 	padding: 10px;
-	border-radius: 10px;
+	/* border-radius: 10px; */
+	min-height: 125px;
 }
 
 .picker-category h3 {
 	font-size: 150%;
-	margin: 0 10px 10px 10px;
+	margin: -10px -10px 10px -10px;
+	background-color: #4e5d1d;
+	padding: 15px;
+	color: #fff;
 }
 
-.get-moving-section, .serve-section, .create-section, .know-your-parks-section {
-	background-color: #98d598;
+.remove-category h3{
+	background-color: #d55757;
 }
+
+/* .get-moving-section, .serve-section, .create-section, .know-your-parks-section {
+	color: #000;
+	background-color: #fff;
+} */
 
 .picker {
-	border-radius: 5px;
+	border-bottom: 1px solid #DCDCDC;
+	margin: 0 10px;
+	padding: 10px;
+}
 
+.picker:last-child {
+	border: none;
+}
+
+.pic-list img {
+	max-width: 100%;
+	margin-bottom: 5px;
+}
+
+.pic-list {
+	padding: 10px 0 0 0;
 }
 /* ---------------------------------- radio buttons --------------------------------*/
 
@@ -146,14 +178,81 @@ nav span i {
  background: white;
 }
 
-.picker {
-	padding: 10px;
+/* ---------------------------- checkbox styles -------------------------------*/
+
+/* Customize the label (the container) */
+.container-ck {
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 110%;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 }
 
-.odd {
-	background-color: #999;
+/* Hide the browser's default checkbox */
+.container-ck input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
 }
 
-.even {
-	background-color: #fff;
+/* Create a custom checkbox */
+.checkmark-2 {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-ck:hover input ~ .checkmark-2 {
+ background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-ck input:checked ~ .checkmark-2 {
+ background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-2:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.container-ck input:checked ~ .checkmark-2:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-ck .checkmark-2:after {
+ left: 9px;
+ top: 5px;
+ width: 5px;
+ height: 10px;
+ border: solid white;
+ border-width: 0 3px 3px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 25px 0;
+    display: inline-block;
+    border: 2px solid #34495E;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
 }

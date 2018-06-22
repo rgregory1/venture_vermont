@@ -5,12 +5,13 @@
 <form method='POST' action='/login'>
 	<section class="form-header">
     <h2>Login Page</h2>
+	{% if results is defined %}
+	<p class="{{ alert_box_class }}">{{ results }}</p>
+	{% endif %}
 	</section>
 	<section class="form-body">
 		<section class="picker-category">
-			{% if results is defined %}
-		    <p class="{{ alert_box_class }}">{{ results }}</p>
-		    {% endif %}
+
 
 			<div class="form-div">
 				<label for="username" class="input-label">
@@ -40,7 +41,7 @@
 <script type="text/javascript">
 	jQuery(function(){
 		menuFunction();
-		
+
 	});
 
 	function menuFunction(){

@@ -1,13 +1,8 @@
 {% extends 'base.html' %} {% block body %}
 
-<h2>{{ the_title }}</h2>
 
 <form method='POST' action='/confirm_info' enctype="multipart/form-data">
 	<section class="form-header">
-		<!-- {% if message is defined %}
-    <p>{{ message }}</p>
-    {% endif %}
-    <p>Please select the Major Power you would like to add to your character:</p> -->
 		<h2>Upload Photos and Info</h2>
 	</section>
 	<section class="form-body">
@@ -33,19 +28,11 @@
 				<input type="text" maxlength="20" name="photo_description">
 			</div>
 			<input type="hidden" name="activity_selected" value="{{ current_activity['Activity'] }}">
-			<p>You may upload another photo after this one is uploaded</p>
+			<div class="form-div">
+				<p>You may upload another photo after this one is uploaded</p>
+			</div>
 		</section>
 
-
-
-		<!-- {% for activity in data %}
-    <div class="picker {{ loop.cycle('odd', 'even') }}">
-      <label class="container"><span class="big_deal">{{ data[activity]['Category'] }}</span> - {{ data[activity]['Activity']}}
-        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
-        <span class="checkmark"></span>
-      </label>
-    </div>
-    {% endfor %} -->
 
 		<p class="submitp"><input class="button" value='Make Choice' type='SUBMIT'></p>
 	</section>

@@ -96,7 +96,7 @@ def apply_activity():
 	data = grab_from_storage(family, basedir)
 	activity_selected = request.form['activity_selected']
 	current_activity = pull_activity_dict(activity_selected, data)
-	return render_template('collect_info.html', current_activity=current_activity)
+	return render_template('collect_info.html', current_activity=current_activity, data=data)
 
 
 
