@@ -1,4 +1,9 @@
-{% extends 'base.html' %} {% block body %}
+{% extends 'base.html' %}
+{% block head %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+{% block body %}
 
 
 <form method='POST' action='/confirm_info' enctype="multipart/form-data">
@@ -17,13 +22,13 @@
 				{% if current_activity['details_input'] == '' %}
 					<div class="form-div">
 						<p>{{ current_activity['Details']}}</p>
-						<input type="text" name="details_input">
+						<input type="text" name="details_input" required>
 					</div>
 				{% endif %}
 			{% endif %}
 			<div class="form-div">
 			<label for="file" class="input-label"> <span id="label_span">Select Files to Upload</span> </label>
-				<input id="file" type=file name=photo>
+				<input id="file" type=file name=photo required>
 				<p>If this photo needs addional info, add it here.  (limit 20 chars)</p>
 				<input type="text" maxlength="20" name="photo_description">
 			</div>

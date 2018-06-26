@@ -8,7 +8,7 @@ def grab_from_storage(family, basedir):
 	suffix = '.json'
 	family_file = family + suffix
 	target_directory = basedir / 'static' / 'long_term_storage' / family / family_file
-	print(target_directory)
+	# print(target_directory)
 	with open(target_directory) as f:
 		initial_family_data = json.load(f)
 	return initial_family_data
@@ -35,9 +35,9 @@ def reconfigure_score(data):
 def configure_score(current_activity, data):
 	data['score']['total_score'] = data['score']['total_score'] + current_activity['Points']
 	for category in data['score']['categories']:
-		print(data['score']['categories'][category])
-		print(current_activity['Category'])
-		print(category)
+		# print(data['score']['categories'][category])
+		# print(current_activity['Category'])
+		# print(category)
 		if category == current_activity['Category']:
 			data['score']['categories'][category]['completed'] += 1
 			break

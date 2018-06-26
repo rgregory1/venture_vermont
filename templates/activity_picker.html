@@ -1,4 +1,12 @@
-{% extends 'base.html' %} {% block body %}
+{% extends 'base.html' %}
+
+{% block head %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+
+
+{% block body %}
 
 
 <form method='POST' action='/apply_activity'>
@@ -13,7 +21,7 @@
 				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == False %}
 				<div class="picker">
 					<label class="container">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
+			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}" required>
 			        <span class="checkmark"></span>
 			      </label>
 				</div>

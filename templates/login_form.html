@@ -1,6 +1,11 @@
-{% extends 'base.html' %} {% block body %}
+{% extends 'base.html' %}
+{% block head %}
 
-<h2>{{ the_title }}</h2>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+
+{% block body %}
+
 
 <form method='POST' action='/login'>
 	<section class="form-header">
@@ -17,14 +22,14 @@
 				<label for="username" class="input-label">
 					<span>Username</span>
 				</label>
-					<input id="username" type=text name=username>
+					<input id="username" type=text name=username required>
 			</div>
 
 			<div class="form-div">
 				<label for="password" class="input-label">
 					<span>Password</span>
 				</label>
-					<input id="password" type=text name=password>
+					<input id="password" type=text name=password required>
 			</div>
 
 
