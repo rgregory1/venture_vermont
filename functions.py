@@ -60,3 +60,11 @@ def push_dict(data, family, basedir):
 	target_directory = basedir / 'static' / 'long_term_storage' / family / family_file
 	with open(target_directory, 'w') as f:
 		json.dump(data, f, indent=4)
+
+def find_priority_points_total(data):
+	points = 0
+	for activity in data:
+		if 'is_target' in data[activity]:
+			if data[activity]['is_target'] is True:
+				points = points + data[activity]['Points']
+	return points

@@ -39,6 +39,9 @@ nav {
 	font-size: 125%
 }
 
+
+/*--------------------------------- icons -------------------------------------*/
+
 span.score {
 	position: absolute;
 	top: 0;
@@ -53,6 +56,7 @@ span.score i {
 	margin: 0 20px;
 }
 
+/* ------------------------------------- form parts ----------------------------*/
 .form-header, .removal-notice {
 	padding: 20px;
 	background-color: #3d6d0d;
@@ -63,10 +67,43 @@ span.score i {
 	line-height: 150%;
 }
 
+.form-header a {
+	color: #fff;
+}
 
 .form-div {
     margin: 20px;
 }
+
+.submit-section {
+	text-align: center;
+	/* position: sticky;
+	position: -webkit-sticky; */
+	position: relative;
+	bottom: 0;
+	background-color: #3d6d0d;
+	width: 100%;
+}
+
+.button {
+    /* background-color: #4CAF50; */
+    background-color: #34495E;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
 
 /*----------------------------------- picker categories ---------------------------*/
 

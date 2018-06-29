@@ -14,13 +14,13 @@
 	<section class="form-body">
 
 		<section class="picker-category get-moving-section">
-			<h3>Get Moving<span> - {{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-bicycle" aria-hidden="true"></i> Get Moving<span> - {{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -30,13 +30,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category investigate-section">
-			<h3>Investigate<span> - {{ data['score']['categories']['Investigate']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-binoculars" aria-hidden="true"></i> Investigate<span> - {{ data['score']['categories']['Investigate']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Investigate' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -46,13 +46,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category serve-section">
-			<h3>Serve<span> - {{ data['score']['categories']['Serve']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-star-o" aria-hidden="true"></i> Serve<span> - {{ data['score']['categories']['Serve']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Serve' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -62,13 +62,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category outdoor-skills-section">
-			<h3>Outdoor Skills<span> - {{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-fire" aria-hidden="true"></i> Outdoor Skills<span> - {{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Outdoor Skills' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -78,13 +78,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category create-section">
-			<h3>Create<span> - {{ data['score']['categories']['Create']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Create<span> - {{ data['score']['categories']['Create']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Create' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -94,13 +94,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category just-for-fun-section">
-			<h3>Just For Fun<span> - {{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-camera" aria-hidden="true"></i> Just For Fun<span> - {{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Just For Fun' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -110,13 +110,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category know-your-parks-section">
-			<h3>Know Your Parks<span> - {{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Know Your Parks<span> - {{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -130,13 +130,13 @@
 			<p>Select activities in the bottom section to <em>remove from</em> the priority list</p>
 		</section>
 		<section class="picker-category get-moving-section remove-category">
-			<h3>Get Moving<span> - {{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-bicycle" aria-hidden="true"></i> Get Moving<span> - {{ data['score']['categories']['Get Moving']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Get Moving' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -146,13 +146,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category investigate-section remove-category">
-			<h3>Investigate<span> - {{ data['score']['categories']['Investigate']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-binoculars" aria-hidden="true"></i> Investigate<span> - {{ data['score']['categories']['Investigate']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Investigate' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -162,13 +162,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category serve-section remove-category">
-			<h3>Serve<span> - {{ data['score']['categories']['Serve']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-star-o" aria-hidden="true"></i> Serve<span> - {{ data['score']['categories']['Serve']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Serve' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -178,13 +178,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category outdoor-skills-section remove-category">
-			<h3>Outdoor Skills<span> - {{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-fire" aria-hidden="true"></i> Outdoor Skills<span> - {{ data['score']['categories']['Outdoor Skills']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Outdoor Skills' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -194,13 +194,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category create-section remove-category">
-			<h3>Create<span> - {{ data['score']['categories']['Create']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Create<span> - {{ data['score']['categories']['Create']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Create' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -210,13 +210,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category just-for-fun-section remove-category">
-			<h3>Just For Fun<span> - {{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-camera" aria-hidden="true"></i> Just For Fun<span> - {{ data['score']['categories']['Just For Fun']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Just For Fun' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -226,13 +226,13 @@
 		</section><!-- end picker-category -->
 
 		<section class="picker-category know-your-parks-section remove-category">
-			<h3>Know Your Parks<span> - {{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
+			<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Know Your Parks<span> - {{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
-      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}" required>
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
       					<span class="checkmark-2"></span>
       				</label>
 				</div>
@@ -240,8 +240,9 @@
 				{% endif %}
 			{% endfor %}
 		</section><!-- end picker-category -->
-
-		<p class="submitp"><input class="button" value='Continue' type='SUBMIT'></p>
+		<section class="submit-section">
+			<p class="submitp"><input class="button" value='Add or Remove from List' type='SUBMIT'></p>
+		</section>
 	</section> <!-- end form-body -->
 </form>
 
