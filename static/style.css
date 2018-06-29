@@ -77,9 +77,9 @@ span.score i {
 
 .submit-section {
 	text-align: center;
-	/* position: sticky;
-	position: -webkit-sticky; */
-	position: relative;
+	position: sticky;
+	position: -webkit-sticky;
+
 	bottom: 0;
 	background-color: #3d6d0d;
 	width: 100%;
