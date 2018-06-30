@@ -81,12 +81,13 @@ span.score i {
 	position: -webkit-sticky;
 
 	bottom: 0;
-	background-color: #3d6d0d;
+	background-color: #000;
 	width: 100%;
 }
 
 .button {
     /* background-color: #4CAF50; */
+	-webkit-appearance: none;
     background-color: #34495E;
     border: none;
     color: white;
@@ -98,6 +99,7 @@ span.score i {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+
 }
 
 .button:hover {
