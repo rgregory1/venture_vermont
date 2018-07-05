@@ -156,6 +156,26 @@
 				{% endif %}
 			{% endfor %}
 		</section>
+		<section class="picker-category bonus-activities-section">
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i> Bonus Activities</h3>
+			{% for activity in data %}
+				{% if data[activity]['Category'] == 'Bonus Activities' and data[activity]['is_complete'] == True %}
+				<div class="picker">
+					<label class="container">{{ data[activity]['Activity']}}
+			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}" required>
+			        <span class="checkmark"></span>
+			      </label>
+				  {% if data[activity]['thumb_list'] %}
+				  	<section class="pic-list">
+				  		{% for thumb in data[activity]['thumb_list'] %}
+							<img src="{{ url_for('static', filename='long_term_storage/' + family + '/thumbs/' + thumb) }}" />
+						{% endfor %}
+					</section>
+				  {% endif %}
+				</div>
+				{% endif %}
+			{% endfor %}
+		</section>
 
 		<section class="submit-section">
 			<p class="submitp"><input class="button" value='Add Photos' type='SUBMIT'></p>

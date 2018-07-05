@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block head %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+
+{% block body %}
+
+
+
+	<header>
+	    <h2>Download Photos</h2>
+		{% if results is defined %}
+		<p class="{{ alert_box_class }}">{{ results }}</p>
+		{% endif %}
+	</header>
+	<section>
+		<section class="sub-section">
+			<p>This is best done a computer rather than a mobile device.</p>
+			<ul>
+				<li>Pressing the button below will download a <strong>zip</strong> file of all of your uploaded photos.</li>
+				<li>Each photo has been renamed with the name of the activity as the file name</li>
+				<li><strong>This may take a while</strong> as your photo files may be quite large!</li>
+				<li>Thanks for using my app!</li>
+			</ul>
+			<p><a class="button" href="{{ url_for('static', filename='long_term_storage/' + family + '/' + complete_output_filename) }}">Begin Downloading Photos</a></p>
+		</section>
+	</section>
+</form>
+
+
+
+{% endblock %} {% block script %}
+
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+
+	});
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
+
+{% endblock %}

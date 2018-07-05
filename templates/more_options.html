@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block head %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+
+{% block body %}
+
+
+
+	<header>
+	    <h2>More Options</h2>
+		{% if results is defined %}
+		<p class="{{ alert_box_class }}">{{ results }}</p>
+		{% endif %}
+	</header>
+	<section>
+		<section class="sub-section">
+			<h3><a href="{{ url_for('download_photos') }}">Download Photos</a></h3>
+		</section>
+	</section>
+</form>
+
+
+
+{% endblock %} {% block script %}
+
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+
+	});
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
+
+{% endblock %}

@@ -4,6 +4,20 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+	padding: 20px;
+	background-color: #3d6d0d;
+	color: #fff;
+}
+
+p, li {
+	line-height: 150%;
+}
+
+.sub-section {
+	margin: 20px;
+}
+
 /* ------------------------------------ nav styles ---------------------------*/
 nav {
 	background-color: #1a3300;

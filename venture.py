@@ -10,6 +10,7 @@ import pprint
 from PIL import Image
 from functools import wraps
 from credentials import login_creds
+import shutil
 
 ALLOWED_EXTENSIONS = set(['jpg', 'jpeg', 'heic'])
 
@@ -258,18 +259,19 @@ def priority_processor():
 	for toggle in priority_toggles:
 		for activity in data:
 			print(toggle)
-			print(data[activity]['Activity'])
-			if toggle == data[activity]['Activity']:
-				if data[activity]['is_target'] == False:
-					print(data[activity]['Activity'] + ' is false')
-					data[activity]['is_target'] = True
-					print(data[activity]['Activity'] + ' has been toggled')
-				else:
-					data[activity]['is_target'] = False
-					print(data[activity]['Activity'] + ' is truey')
-					print(data[activity]['Activity'] + ' has been toggled')
-				print('breaking now')
-				break
+			if 'Activity' in data[activity]:
+				print(data[activity]['Activity'])
+				if toggle == data[activity]['Activity']:
+					if data[activity]['is_target'] == False:
+						print(data[activity]['Activity'] + ' is false')
+						data[activity]['is_target'] = True
+						print(data[activity]['Activity'] + ' has been toggled')
+					else:
+						data[activity]['is_target'] = False
+						print(data[activity]['Activity'] + ' is truey')
+						print(data[activity]['Activity'] + ' has been toggled')
+					print('breaking now')
+					break
 
 	push_dict(data, family, basedir)
 	# update json file with new info
@@ -327,6 +329,32 @@ def confirm_bonus_info():
 	data[bonus_number] = current_activity
 	push_dict(data, family, basedir)
 	return redirect(url_for('activity_picker'))
+
+@app.route('/more_options')
+@cookie_required
+def more_options():
+	family = request.cookies.get('family')
+	data = grab_from_storage(family, basedir)
+
+	return render_template('more_options.html', data=data)
+
+@app.route('/downlaod_photos')
+@cookie_required
+def download_photos():
+	family = request.cookies.get('family')
+	data = grab_from_storage(family, basedir)
+
+	#create path to directory to be zipped and path for file to be created
+	target_directory = basedir / 'static' / 'long_term_storage' / family / 'photos'
+
+	# create zip file
+	shutil.make_archive(target_directory, 'zip', target_directory)
+	# construct final file name for download link
+	complete_output_filename = 'photos' + '.zip'
+	# zip_for_download = basedir / complete_output_filename
+	return render_template('download_photos.html', family=family, data=data, complete_output_filename=complete_output_filename)
+
+
 
 if __name__ == '__main__':
 	# app.run()

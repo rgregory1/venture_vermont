@@ -124,6 +124,21 @@
 				{% endif %}
 			{% endfor %}
 		</section><!-- end picker-category -->
+		<section class="picker-category bonus-activities-section">
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i> Bonus Activities</h3>
+			{% for activity in data %}
+				{% if data[activity]['Category'] == 'Bonus Activities' and data[activity]['is_complete'] == False and data[activity]['is_target'] == False %}
+			<div class="picker">
+				<div class="checklist">
+					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
+      					<span class="checkmark-2"></span>
+      				</label>
+				</div>
+			</div>
+				{% endif %}
+			{% endfor %}
+		</section><!-- end picker-category -->
 
 		<section class="removal-notice">
 			<h2>Remove from Priority List</h2>
@@ -229,6 +244,21 @@
 			<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Know Your Parks<span> - {{ data['score']['categories']['Know Your Parks']['completed'] }} &#47;3</span></h3>
 			{% for activity in data %}
 				{% if data[activity]['Category'] == 'Know Your Parks' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
+			<div class="picker">
+				<div class="checklist">
+					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
+      					<input type="checkbox" name="priority_toggle" value="{{ data[activity]['Activity'] }}">
+      					<span class="checkmark-2"></span>
+      				</label>
+				</div>
+			</div>
+				{% endif %}
+			{% endfor %}
+		</section><!-- end picker-category -->
+		<section class="picker-category bonus-activities-section remove-category">
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i> Bonus Activities</h3>
+			{% for activity in data %}
+				{% if data[activity]['Category'] == 'Bonus Activities' and data[activity]['is_complete'] == False and data[activity]['is_target'] == True %}
 			<div class="picker">
 				<div class="checklist">
 					<label class="container-ck">{{ data[activity]['Activity'] }} - {{ data[activity]['Points'] }}
