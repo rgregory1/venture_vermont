@@ -13,13 +13,22 @@ def grab_from_storage(family, basedir):
 		initial_family_data = json.load(f)
 	return initial_family_data
 
+# working function saved just incase
+# def pull_activity_dict(activity_selected, data):
+# 	current_activity = {}
+# 	for activity in data:
+# 		if data[activity]['Activity'] == activity_selected:
+# 			current_activity = data[activity]
+# 			break
+# 	return current_activity
 
 def pull_activity_dict(activity_selected, data):
 	current_activity = {}
 	for activity in data:
-		if data[activity]['Activity'] == activity_selected:
-			current_activity = data[activity]
-			break
+		if 'Activity' in data[activity]:
+			if data[activity]['Activity'] == activity_selected:
+				current_activity = data[activity]
+				break
 	return current_activity
 
 def reconfigure_score(data):
@@ -45,9 +54,10 @@ def configure_score(current_activity, data):
 
 def push_activity_dict(current_activity, data, family, basedir):
 	for activity in data:
-		if data[activity]['Activity'] == current_activity['Activity']:
-			data[activity] = current_activity
-			break
+		if 'Activity' in data[activity]:
+			if data[activity]['Activity'] == current_activity['Activity']:
+				data[activity] = current_activity
+				break
 	suffix = '.json'
 	family_file = family + suffix
 	target_directory = basedir / 'static' / 'long_term_storage' / family / family_file

@@ -112,6 +112,20 @@
 				{% endif %}
 			{% endfor %}
 		</section >
+		<section class="picker-category bonus_activities">
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i>
+ Bonuse Activities</h3>
+			{% for activity in data %}
+				{% if data[activity]['Category'] == 'Bonus Activities' and data[activity]['is_complete'] == False %}
+				<div class="picker">
+					<label class="container">{{ data[activity]['Activity']}} - {{ data[activity]['Points'] }}
+			        <input type="radio" name="activity_selected" value="{{ data[activity]['Activity'] }}">
+			        <span class="checkmark"></span>
+			      </label>
+				</div>
+				{% endif %}
+			{% endfor %}
+		</section >
 
 	<section class="submit-section">
 		<p class="submitp"><input class="button" value='Choose an Activity' type='SUBMIT'></p>

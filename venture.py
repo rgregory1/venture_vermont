@@ -230,7 +230,7 @@ def confirm_info():
 	push_activity_dict(current_activity, data, family, basedir)
 
 	pprint.pprint(current_activity)
-	return render_template('collect_info.html', current_activity=current_activity, results=results, alert_box_class=alert_box_class)
+	return render_template('collect_info.html', current_activity=current_activity, results=results, alert_box_class=alert_box_class, data=data)
 
 @app.route('/completed')
 @cookie_required
@@ -284,6 +284,49 @@ def priority_list():
 	# total priority list points here
 	priority_points = find_priority_points_total(data)
 	return render_template('priority_list.html', data=data, priority_points=priority_points)
+
+@app.route('/add_bonus', methods=['GET', 'POST'])
+@cookie_required
+def add_bonus():
+	family = request.cookies.get('family')
+	data = grab_from_storage(family, basedir)
+	return render_template('collect_bonus_info.html', data=data)
+
+@app.route('/confirm_bonus_info', methods=['GET', 'POST'])
+@cookie_required
+def confirm_bonus_info():
+	current_activity = {}
+	family = request.cookies.get('family')
+	data = grab_from_storage(family, basedir)
+	# grab the name of the bonus activity
+	activity_selected = request.form['bonus_activity_name']
+	# print('activity selected: ' + activity_selected)
+	bonus_activity_points = int(request.form['bonus_activity_points'])
+	# print('bonus points: ' + bonus_activity_points)
+	# grab photo description from form, add a hypen to it
+	# photo_description = request.form['photo_description']
+	# if photo_description != '':
+	# 	photo_description = photo_description.replace(" " ,"_")
+	# 	photo_description = '-' + photo_description
+	# print('photo description: ' + photo_description)
+
+	current_activity['Category'] = 'Bonus Activities'
+	current_activity['Activity'] = activity_selected
+	current_activity['Details'] = ''
+	current_activity['Points'] = bonus_activity_points
+	current_activity['is_complete'] = False
+	current_activity['is_target'] = False
+	current_activity['details_input'] = ''
+
+	pprint.pprint(current_activity)
+	data_length = len(data) - 78
+	print('data length: ' + str(data_length))
+	bonus_number = 'B' + str(data_length)
+	# figure out length of dictionary then subtract one and concatitnate it with B to get
+	# the dictionary key
+	data[bonus_number] = current_activity
+	push_dict(data, family, basedir)
+	return redirect(url_for('activity_picker'))
 
 if __name__ == '__main__':
 	# app.run()

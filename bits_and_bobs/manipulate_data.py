@@ -31,7 +31,7 @@ for i, data_line in enumerate(data):
 	x['is_complete'] = False
 	x['is_target'] = False
 	x['details_input'] = ''
-	x['show']=''
+	# x['show']=''
 	#print(x)
 	venture_info_dict[int(i)] = x
 

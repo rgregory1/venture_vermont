@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block head %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+{% endblock %}
+{% block body %}
+
+
+<form method='POST' action='/confirm_bonus_info' enctype="multipart/form-data">
+	<section class="form-header">
+		<h2>Enter your Bonus Activity Info Below</h2>
+	</section>
+	<section class="form-body">
+		<section class="picker-category">
+			{% if results is defined %}
+		    <p class="{{ alert_box_class }}">{{ results }}</p>
+		    {% endif %}
+
+			<div class="form-div">
+				<label for="bonus-name">Enter the name of your Bonus Activity</label>
+				<input type="text" id="bonus-name" name="bonus_activity_name" required>
+			</div>
+
+			<div class="form-div">
+				<label for="bonus-points">How many points is it worth?</label>
+				<input type="text" id="bonus-points" name="bonus_activity_points" required>
+			</div>
+
+			<!-- <div class="form-div">
+				<label for="file" class="input-label"> <span id="label_span">Select Files to Upload</span> </label>
+				<input id="file" type=file name=photo required>
+				<p>If this photo needs addional info, add it here.  (limit 20 chars)</p>
+				<input type="text" maxlength="20" name="photo_description">
+			</div> -->
+
+			<!-- <div class="form-div">
+				<p>You may upload another photo after this one is uploaded</p>
+			</div> -->
+		</section>
+		<section class="submit-section">
+			<p class="submitp"><input class="button" value='Upload' type='SUBMIT'></p>
+		</section>
+	</section>
+</form>
+
+
+
+{% endblock %} {% block script %}
+<script type="text/javascript">
+	jQuery(function(){
+		menuFunction();
+
+	});
+
+	function menuFunction(){
+		$(".score").click(function(){
+		$("#hider").toggle(1000);
+		});
+	}
+
+	function oddSpotter(){
+		$( ".picker:odd" ).css( "background-color", "#999999" );
+	}
+
+</script>
+{% endblock %}
