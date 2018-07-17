@@ -254,13 +254,14 @@ def priority_processor():
 	priority_toggles = request.form.getlist('priority_toggle')
 	data = grab_from_storage(family, basedir)
 
+	print('priority toggles ---------------------------------------')
 	print(priority_toggles)
 
 	for toggle in priority_toggles:
+		print('The toggle is: {}'.format(toggle))
 		for activity in data:
-			print(toggle)
 			if 'Activity' in data[activity]:
-				print(data[activity]['Activity'])
+				# print(data[activity]['Activity'])
 				if toggle == data[activity]['Activity']:
 					if data[activity]['is_target'] == False:
 						print(data[activity]['Activity'] + ' is false')
